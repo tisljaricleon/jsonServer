@@ -1,4 +1,10 @@
 {
+  "login": {
+    "token": "quztvaksahw./fjlasjfasfq{"
+  },
+  "register": {
+    "token": "quztvaksahw./fjlasjfasfq{"
+  },
   "getUserProfile": [
     {
       "name": "Marko",
