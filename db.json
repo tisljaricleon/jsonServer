@@ -8,7 +8,6 @@
   },
   "getUserProfile": [
     {
-      "id": 1,
       "name": "Marko",
       "surname": "Markić",
       "oib": "11111111111",
@@ -20,7 +19,6 @@
       "childrenOib": ["22222222222", "33333333333"]
     },
     {
-      "id": 2,
       "name": "Iva",
       "surname": "Ivić",
       "oib": "44444444444",
@@ -32,7 +30,6 @@
       "childrenOib": []
     },
     {
-      "id": 3,
       "name": "Pero",
       "surname": "Perić",
       "oib": "55555555555",
@@ -46,7 +43,6 @@
   ],
   "getChildProfile": [
     {
-      "id": 1,
       "name": "Fran",
       "surname": "Markić",
       "oib": "22222222222",
@@ -56,7 +52,6 @@
       "parentOib": ["11111111111"]
     },
     {
-      "id": 2,
       "name": "Mirta",
       "surname": "Markić",
       "oib": "33333333333",
