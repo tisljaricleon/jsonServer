@@ -61,13 +61,45 @@
       "parentOib": ["11111111111"]
     }
   ],
+  "getMedicalStaff": [
+    {
+      "childOib": "22222222222",
+      "staff": [
+        {
+          "staffOib": "44444444444",
+          "staffRole": "LIJEČNIK",
+          "staffName": "Iva",
+          "staffSurname": "Ivić"
+        }
+      ]
+    },
+    {
+      "childOib": "33333333333",
+      "staff": [
+        {
+          "staffOib": "44444444444",
+          "staffRole": "LIJEČNIK",
+          "staffName": "Iva",
+          "staffSurname": "Ivić"
+        },
+        {
+          "staffOib": "55555555555",
+          "staffRole": "PEDIJATAR",
+          "staffName": "Pero",
+          "staffSurname": "Perić"
+        }
+      ]
+    }
+  ],
   "postNewAppointment": {
-    "patientOib": "",
+    "childOib": "",
     "staffOib": "",
     "date": "",
     "time": ""
   },
   "postNewMedicalReport": {
+    "childOib": "",
+    "staffOib": "",
     "medicalReport": "",
     "feedback": false,
     "additionalNote": ""
@@ -80,8 +112,8 @@
       "staffRole": "LIJEČNIK",
       "staffName": "Iva",
       "staffSurname": "Ivić",
-      "patientName": "Fran",
-      "patientSurname": "Markić"
+      "childName": "Fran",
+      "childSurname": "Markić"
     },
     {
       "id": 2,
@@ -90,8 +122,8 @@
       "staffRole": "PEDIJATAR",
       "staffName": "Pero",
       "staffSurname": "Perić",
-      "patientName": "Mirta",
-      "patientSurname": "Markić"
+      "childName": "Mirta",
+      "childSurname": "Markić"
     }
   ],
   "getWaitingAppointments": [
@@ -102,8 +134,8 @@
       "staffRole": "LIJEČNIK",
       "staffName": "Iva",
       "staffSurname": "Ivić",
-      "patientName": "Mirta",
-      "patientSurname": "Markić"
+      "childName": "Mirta",
+      "childSurname": "Markić"
     },
     {
       "id": 2,
@@ -112,8 +144,8 @@
       "staffRole": "PEDIJATAR",
       "staffName": "Pero",
       "staffSurname": "Perić",
-      "patientName": "Mirta",
-      "patientSurname": "Markić"
+      "childName": "Mirta",
+      "childSurname": "Markić"
     }
   ],
   "postDeleteAppointment": {
