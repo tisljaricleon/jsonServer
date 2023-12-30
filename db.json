@@ -16,7 +16,7 @@
       "email": "marko.markic@gmail.com",
       "address": "Ulica Marka Markića 1",
       "role": "RODITELJ",
-      "childrenOib": ["22222222222", "33333333333"]
+      "childOib": ["22222222222", "33333333333"]
     },
     {
       "name": "Iva",
@@ -27,7 +27,7 @@
       "email": "iva.ivic@gmail.com",
       "address": "Ulica Ive Ivić 2",
       "role": "LIJEČNIK",
-      "childrenOib": []
+      "childOib": []
     },
     {
       "name": "Pero",
@@ -38,7 +38,7 @@
       "email": "pero.peric@gmail.com",
       "address": "Ulica Pere Perić 3",
       "role": "PEDIJATAR",
-      "childrenOib": []
+      "childOib": []
     }
   ],
   "getChildProfile": [
@@ -60,5 +60,66 @@
       "address": "Ulica Marka Markića 1",
       "parentOib": ["11111111111"]
     }
-  ]
+  ],
+  "postNewAppointment": {
+    "patientOib": "",
+    "staffOib": "",
+    "date": "",
+    "time": ""
+  },
+  "postNewMedicalReport": {
+    "medicalReport": "",
+    "feedback": false,
+    "additionalNote": ""
+  },
+  "getScheduledAppointments": [
+    {
+      "id": 1,
+      "date": "1.1.2024.",
+      "time": "00:00",
+      "staffRole": "LIJEČNIK",
+      "staffName": "Iva",
+      "staffSurname": "Ivić",
+      "patientName": "Fran",
+      "patientSurname": "Markić"
+    },
+    {
+      "id": 2,
+      "date": "2.1.2024.",
+      "time": "12:00",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "patientName": "Mirta",
+      "patientSurname": "Markić"
+    }
+  ],
+  "getWaitingAppointments": [
+    {
+      "id": 1,
+      "date": "1.2.2024.",
+      "time": "06:00",
+      "staffRole": "LIJEČNIK",
+      "staffName": "Iva",
+      "staffSurname": "Ivić",
+      "patientName": "Mirta",
+      "patientSurname": "Markić"
+    },
+    {
+      "id": 2,
+      "date": "10.2.2024.",
+      "time": "15:30",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "patientName": "Mirta",
+      "patientSurname": "Markić"
+    }
+  ],
+  "postDeleteAppointment": {
+    "id": 0
+  },
+  "postCancelAppointment": {
+    "id": 0
+  }
 }
