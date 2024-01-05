@@ -16,7 +16,10 @@
       "email": "marko.markic@gmail.com",
       "address": "Ulica Marka Markića 1",
       "role": "RODITELJ",
-      "childOib": ["22222222222", "33333333333"]
+      "childOib": [
+        "22222222222",
+        "33333333333"
+      ]
     },
     {
       "name": "Iva",
@@ -49,7 +52,9 @@
       "sex": "Muško",
       "dateOfBirth": "1.1.2010.",
       "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
+      "parentOib": [
+        "11111111111"
+      ]
     },
     {
       "name": "Mirta",
@@ -58,7 +63,9 @@
       "sex": "Žensko",
       "dateOfBirth": "2.1.2010.",
       "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
+      "parentOib": [
+        "11111111111"
+      ]
     }
   ],
   "getMedicalStaff": [
@@ -109,9 +116,11 @@
       "id": 1,
       "date": "1.1.2024.",
       "time": "00:00",
+      "staffOib": "44444444444",
       "staffRole": "LIJEČNIK",
       "staffName": "Iva",
       "staffSurname": "Ivić",
+      "childOib": "22222222222",
       "childName": "Fran",
       "childSurname": "Markić"
     },
@@ -119,9 +128,11 @@
       "id": 2,
       "date": "2.1.2024.",
       "time": "12:00",
+      "staffOib": "55555555555",
       "staffRole": "PEDIJATAR",
       "staffName": "Pero",
       "staffSurname": "Perić",
+      "childOib": "33333333333",
       "childName": "Mirta",
       "childSurname": "Markić"
     }
@@ -131,9 +142,11 @@
       "id": 1,
       "date": "1.2.2024.",
       "time": "06:00",
+      "staffOib": "44444444444",
       "staffRole": "LIJEČNIK",
       "staffName": "Iva",
       "staffSurname": "Ivić",
+      "childOib": "33333333333",
       "childName": "Mirta",
       "childSurname": "Markić"
     },
@@ -141,17 +154,41 @@
       "id": 2,
       "date": "10.2.2024.",
       "time": "15:30",
+      "staffOib": "55555555555",
       "staffRole": "PEDIJATAR",
       "staffName": "Pero",
       "staffSurname": "Perić",
+      "childOib": "33333333333",
       "childName": "Mirta",
       "childSurname": "Markić"
     }
   ],
   "postDeleteAppointment": {
-    "id": 0
+    "id": 1
   },
   "postCancelAppointment": {
-    "id": 0
+    "id": 2
+  },
+  "postAcceptAppointment": {
+    "id": 1
+  },
+  "postNewMedicalExam": {
+    "childOib": "",
+    "staffOib": "",
+    "symptomsDescription": "",
+    "symptomsDuration": "",
+    "physicalExamDescription": "",
+    "diagnosisDescription": "",
+    "diagnosisMedication": "",
+    "diagnosisTreatment": "",
+    "excuseLetter": {
+      "isGiven": false,
+      "diagnosisName": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    "sickLeaveLetter": {
+      "isGiven": false
+    }
   }
 }
