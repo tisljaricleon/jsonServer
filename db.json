@@ -159,13 +159,13 @@
     }
   ],
   "postDeleteAppointment": {
-    "id": 1
+    "id": 0
   },
   "postCancelAppointment": {
-    "id": 2
+    "id": 0
   },
   "postAcceptAppointment": {
-    "id": 1
+    "id": 0
   },
   "postNewMedicalExam": {
     "childOib": "",
@@ -241,6 +241,43 @@
       "dateOfBirth": "2.1.2010.",
       "address": "Ulica Marka Markića 1",
       "parentOib": ["11111111111"]
+    }
+  ],
+
+  "postCancelSickLeave": {
+    "id": 0
+  },
+
+  "postAcceptSickLeave": {
+    "id": 0
+  },
+
+  "getWaitingSickLeaves": [
+    {
+      "id": 0,
+      "staffOib": "55555555555",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "childOib": "22222222222",
+      "childName": "Fran",
+      "childSurname": "Markić",
+      "diagnosisName": "Bolest 1",
+      "startDate": "28.12.2023",
+      "endDate": "4.1.2024"
+    },
+    {
+      "id": 1,
+      "staffOib": "55555555555",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "childOib": "33333333333",
+      "childName": "Mirta",
+      "childSurname": "Markić",
+      "diagnosisName": "Bolest 2",
+      "startDate": "1.1.2024",
+      "endDate": "7.1.2024"
     }
   ]
 }
