@@ -193,5 +193,48 @@
     "dateOfBirth": "1.1.2010.",
     "address": "Ulica Marka Markića 1",
     "parentOib": ["11111111111"]
-  }
+  },
+
+  "getWaitingMedicalReports": [
+    {
+      "id": 0,
+      "childOib": "22222222222",
+      "childName": "Fran",
+      "childSurname": "Markić",
+      "medicalReport": "file goes here"
+    },
+    {
+      "id": 1,
+      "childOib": "33333333333",
+      "childName": "Mirta",
+      "childSurname": "Markić",
+      "medicalReport": "file goes here"
+    }
+  ],
+
+  "postMedicalReportReply": {
+    "id": 0,
+    "additionalNote": ""
+  },
+
+  "getPatients": [
+    {
+      "name": "Fran",
+      "surname": "Markić",
+      "oib": "22222222222",
+      "sex": "Muško",
+      "dateOfBirth": "1.1.2010.",
+      "address": "Ulica Marka Markića 1",
+      "parentOib": ["11111111111"]
+    },
+    {
+      "name": "Mirta",
+      "surname": "Markić",
+      "oib": "33333333333",
+      "sex": "Žensko",
+      "dateOfBirth": "2.1.2010.",
+      "address": "Ulica Marka Markića 1",
+      "parentOib": ["11111111111"]
+    }
+  ]
 }
