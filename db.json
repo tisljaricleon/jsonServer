@@ -100,6 +100,8 @@
   "postNewMedicalReport": {
     "childOib": "",
     "staffOib": "",
+    "date": "",
+    "time": "",
     "medicalReport": "",
     "feedback": false,
     "additionalNote": ""
@@ -201,6 +203,8 @@
       "childOib": "22222222222",
       "childName": "Fran",
       "childSurname": "Markić",
+      "date": "1.1.2024.",
+      "time": "00:00",
       "medicalReport": "file goes here"
     },
     {
@@ -208,6 +212,8 @@
       "childOib": "33333333333",
       "childName": "Mirta",
       "childSurname": "Markić",
+      "date": "5.1.2024.",
+      "time": "12:00",
       "medicalReport": "file goes here"
     }
   ],
