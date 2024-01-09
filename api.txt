@@ -275,7 +275,6 @@ vraća:
     "sex": "Muško",
     "dateOfBirth": "1.1.2010.",
     "address": "Ulica Marka Markića 1",
-    "parentOib": ["11111111111"]
 }
 
 "getWaitingMedicalReports": [
@@ -316,7 +315,6 @@ ništa, samo status OK
       "sex": "Muško",
       "dateOfBirth": "1.1.2010.",
       "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
     },
     {
       "name": "Mirta",
@@ -325,7 +323,6 @@ ništa, samo status OK
       "sex": "Žensko",
       "dateOfBirth": "2.1.2010.",
       "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
     }
 ]
 

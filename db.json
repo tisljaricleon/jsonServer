@@ -188,8 +188,7 @@
     "oib": "22222222222",
     "sex": "Muško",
     "dateOfBirth": "1.1.2010.",
-    "address": "Ulica Marka Markića 1",
-    "parentOib": ["11111111111"]
+    "address": "Ulica Marka Markića 1"
   },
 
   "getWaitingMedicalReports": [
@@ -225,8 +224,7 @@
       "oib": "22222222222",
       "sex": "Muško",
       "dateOfBirth": "1.1.2010.",
-      "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
+      "address": "Ulica Marka Markića 1"
     },
     {
       "name": "Mirta",
@@ -234,8 +232,7 @@
       "oib": "33333333333",
       "sex": "Žensko",
       "dateOfBirth": "2.1.2010.",
-      "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
+      "address": "Ulica Marka Markića 1"
     }
   ],
 
