@@ -64,7 +64,6 @@ vraća:
       "email": "marko.markic@gmail.com",
       "address": "Ulica Marka Markića 1",
       "role": "RODITELJ",
-      "childOib": ["22222222222", "33333333333"]
     },
     {
       "name": "Iva",
@@ -75,7 +74,6 @@ vraća:
       "email": "iva.ivic@gmail.com",
       "address": "Ulica Ive Ivić 2",
       "role": "LIJEČNIK",
-      "childOib": []
     },
     {
       "name": "Pero",
@@ -86,7 +84,6 @@ vraća:
       "email": "pero.peric@gmail.com",
       "address": "Ulica Pere Perić 3",
       "role": "PEDIJATAR",
-      "childOib": []
     }
 ]
 
@@ -98,7 +95,6 @@ vraća:
       "sex": "Muško",
       "dateOfBirth": "1.1.2010.",
       "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
     },
     {
       "name": "Mirta",
@@ -107,7 +103,6 @@ vraća:
       "sex": "Žensko",
       "dateOfBirth": "2.1.2010.",
       "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
     }
 ]
 
