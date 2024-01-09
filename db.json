@@ -15,8 +15,7 @@
       "dateOfBirth": "1.1.1980.",
       "email": "marko.markic@gmail.com",
       "address": "Ulica Marka Markića 1",
-      "role": "RODITELJ",
-      "childOib": ["22222222222", "33333333333"]
+      "role": "RODITELJ"
     },
     {
       "name": "Iva",
@@ -26,8 +25,7 @@
       "dateOfBirth": "2.2.1980.",
       "email": "iva.ivic@gmail.com",
       "address": "Ulica Ive Ivić 2",
-      "role": "LIJEČNIK",
-      "childOib": []
+      "role": "LIJEČNIK"
     },
     {
       "name": "Pero",
@@ -37,8 +35,7 @@
       "dateOfBirth": "3.3.1980.",
       "email": "pero.peric@gmail.com",
       "address": "Ulica Pere Perić 3",
-      "role": "PEDIJATAR",
-      "childOib": []
+      "role": "PEDIJATAR"
     }
   ],
   "getChildProfile": [
@@ -48,8 +45,7 @@
       "oib": "22222222222",
       "sex": "Muško",
       "dateOfBirth": "1.1.2010.",
-      "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
+      "address": "Ulica Marka Markića 1"
     },
     {
       "name": "Mirta",
@@ -57,8 +53,7 @@
       "oib": "33333333333",
       "sex": "Žensko",
       "dateOfBirth": "2.1.2010.",
-      "address": "Ulica Marka Markića 1",
-      "parentOib": ["11111111111"]
+      "address": "Ulica Marka Markića 1"
     }
   ],
   "getMedicalStaff": [
