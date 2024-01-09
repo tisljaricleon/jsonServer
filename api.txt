@@ -1,0 +1,382 @@
+## GET zahtjevi ##
+- ne šalju ništa u body requesta, jedino se token prenosi u headeru requesta
+- token bi se trebao povuči iz headera requesta na sličan način kao kod ovog:
+
+String authorizationHeader = request.getHeader("Authorization");
+if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
+    String token = authorizationHeader.substring(7);
+}
+
+-jer je postavljen kod frontenda kao:
+headers: {
+        Authorization: `Bearer ${Cookies.get("token")}`,
+}
+
+- POST zahtjevi imaju pored označeno POST, ostali su GET zahtjevi
+
+## API RUTE ##
+"login" - POST:
+prima:
+    {
+        "email": email,
+        "password": password,
+    }
+vraća:
+  {
+    "token": "quztvaksahw./fjlasjfasfq"
+  }
+
+
+"logout" - POST:
+prima:
+    {
+        "token": "quztvaksahw./fjlasjfasfq"
+    }
+vraća:
+ništa, samo OK status
+
+
+"register" - POST:
+prima:
+    {
+        name: name,
+        surname: surname,
+        oib: oib,
+        sex: sex,
+        dateOfBirth: dateOfBirth,
+        address: address,
+        email: email,
+        password: password,
+        confirmPassword: confirmPassword,
+    }
+vraća:
+  {
+    "token": "quztvaksahw./fjlasjfasfq"
+  }
+
+"getUserProfile": [
+    {
+      "name": "Marko",
+      "surname": "Markić",
+      "oib": "11111111111",
+      "sex": "Muško",
+      "dateOfBirth": "1.1.1980.",
+      "email": "marko.markic@gmail.com",
+      "address": "Ulica Marka Markića 1",
+      "role": "RODITELJ",
+      "childOib": ["22222222222", "33333333333"]
+    },
+    {
+      "name": "Iva",
+      "surname": "Ivić",
+      "oib": "44444444444",
+      "sex": "Žensko",
+      "dateOfBirth": "2.2.1980.",
+      "email": "iva.ivic@gmail.com",
+      "address": "Ulica Ive Ivić 2",
+      "role": "LIJEČNIK",
+      "childOib": []
+    },
+    {
+      "name": "Pero",
+      "surname": "Perić",
+      "oib": "55555555555",
+      "sex": "Muško",
+      "dateOfBirth": "3.3.1980.",
+      "email": "pero.peric@gmail.com",
+      "address": "Ulica Pere Perić 3",
+      "role": "PEDIJATAR",
+      "childOib": []
+    }
+]
+
+"getChildProfile": [
+    {
+      "name": "Fran",
+      "surname": "Markić",
+      "oib": "22222222222",
+      "sex": "Muško",
+      "dateOfBirth": "1.1.2010.",
+      "address": "Ulica Marka Markića 1",
+      "parentOib": ["11111111111"]
+    },
+    {
+      "name": "Mirta",
+      "surname": "Markić",
+      "oib": "33333333333",
+      "sex": "Žensko",
+      "dateOfBirth": "2.1.2010.",
+      "address": "Ulica Marka Markića 1",
+      "parentOib": ["11111111111"]
+    }
+]
+
+"getMedicalStaff": [
+    {
+      "childOib": "22222222222",
+      "staff": [
+        {
+          "staffOib": "44444444444",
+          "staffRole": "LIJEČNIK",
+          "staffName": "Iva",
+          "staffSurname": "Ivić"
+        }
+      ]
+    },
+    {
+      "childOib": "33333333333",
+      "staff": [
+        {
+          "staffOib": "44444444444",
+          "staffRole": "LIJEČNIK",
+          "staffName": "Iva",
+          "staffSurname": "Ivić"
+        },
+        {
+          "staffOib": "55555555555",
+          "staffRole": "PEDIJATAR",
+          "staffName": "Pero",
+          "staffSurname": "Perić"
+        }
+      ]
+    }
+]
+
+"postNewAppointment" - POST:
+prima:
+{
+    "childOib": "",
+    "staffOib": "",
+    "date": "",
+    "time": ""
+}
+vraća:
+ništa, samo status OK
+
+"postNewMedicalReport" - POST:
+prima:
+{
+    "childOib": "",
+    "staffOib": "",
+    "date": "",
+    "time": "",
+    "medicalReport": "",
+    "feedback": false,
+    "additionalNote": ""
+}
+vraća:
+ništa, samo status OK
+
+"getScheduledAppointments": [
+    {
+      "id": 1,
+      "date": "1.1.2024.",
+      "time": "00:00",
+      "staffOib": "44444444444",
+      "staffRole": "LIJEČNIK",
+      "staffName": "Iva",
+      "staffSurname": "Ivić",
+      "childOib": "22222222222",
+      "childName": "Fran",
+      "childSurname": "Markić"
+    },
+    {
+      "id": 2,
+      "date": "2.1.2024.",
+      "time": "12:00",
+      "staffOib": "55555555555",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "childOib": "33333333333",
+      "childName": "Mirta",
+      "childSurname": "Markić"
+    }
+  ]
+
+"getWaitingAppointments": [
+    {
+      "id": 1,
+      "date": "1.2.2024.",
+      "time": "06:00",
+      "staffOib": "44444444444",
+      "staffRole": "LIJEČNIK",
+      "staffName": "Iva",
+      "staffSurname": "Ivić",
+      "childOib": "33333333333",
+      "childName": "Mirta",
+      "childSurname": "Markić"
+    },
+    {
+      "id": 2,
+      "date": "10.2.2024.",
+      "time": "15:30",
+      "staffOib": "55555555555",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "childOib": "33333333333",
+      "childName": "Mirta",
+      "childSurname": "Markić"
+    }
+  ]
+
+"postDeleteAppointment" - POST:
+prima:
+{
+    "id": 0
+}
+vraća:
+ništa, samo status OK
+
+"postCancelAppointment" - POST
+prima:
+{
+    "id": 0
+}
+vraća:
+ništa, samo status OK
+
+"postAcceptAppointment" - POST
+prima:
+{
+    "id": 0
+}
+vraća:
+ništa, samo status OK
+
+"postNewMedicalExam" - POST
+prima:
+{
+    "childOib": "",
+    "staffOib": "",
+    "symptomsDescription": "",
+    "symptomsDuration": "",
+    "physicalExamDescription": "",
+    "diagnosisDescription": "",
+    "diagnosisMedication": "",
+    "diagnosisTreatment": "",
+    "excuseLetter": {
+      "isGiven": false,
+      "diagnosisName": "",
+      "startDate": "",
+      "endDate": ""
+    },
+    "sickLeaveLetter": {
+      "isGiven": false
+    }
+}
+vraća:
+ništa, samo status OK
+
+"getChildProfileByOib" - POST:
+prima:
+"childOib": "22222222222"
+vraća:
+{
+    "name": "Fran",
+    "surname": "Markić",
+    "oib": "22222222222",
+    "sex": "Muško",
+    "dateOfBirth": "1.1.2010.",
+    "address": "Ulica Marka Markića 1",
+    "parentOib": ["11111111111"]
+}
+
+"getWaitingMedicalReports": [
+    {
+      "id": 0,
+      "childOib": "22222222222",
+      "childName": "Fran",
+      "childSurname": "Markić",
+      "date": "1.1.2024.",
+      "time": "00:00",
+      "medicalReport": "file goes here"
+    },
+    {
+      "id": 1,
+      "childOib": "33333333333",
+      "childName": "Mirta",
+      "childSurname": "Markić",
+      "date": "5.1.2024.",
+      "time": "12:00",
+      "medicalReport": "file goes here"
+    }
+]
+
+"postMedicalReportReply" - POST:
+prima:
+{
+    "id": 0,
+    "additionalNote": ""
+}
+vraća:
+ništa, samo status OK
+
+"getPatients": [
+    {
+      "name": "Fran",
+      "surname": "Markić",
+      "oib": "22222222222",
+      "sex": "Muško",
+      "dateOfBirth": "1.1.2010.",
+      "address": "Ulica Marka Markića 1",
+      "parentOib": ["11111111111"]
+    },
+    {
+      "name": "Mirta",
+      "surname": "Markić",
+      "oib": "33333333333",
+      "sex": "Žensko",
+      "dateOfBirth": "2.1.2010.",
+      "address": "Ulica Marka Markića 1",
+      "parentOib": ["11111111111"]
+    }
+]
+
+"postCancelSickLeave" - POST:
+prima:
+{
+    "id": 0
+}
+vraća:
+ništa, samo status OK
+
+"postAcceptSickLeave" - POST:
+prima:
+{
+    "id": 0
+}
+vraća:
+ništa, samo status OK
+
+
+"getWaitingSickLeaves": [
+    {
+      "id": 0,
+      "staffOib": "55555555555",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "childOib": "22222222222",
+      "childName": "Fran",
+      "childSurname": "Markić",
+      "diagnosisName": "Bolest 1",
+      "startDate": "28.12.2023",
+      "endDate": "4.1.2024"
+    },
+    {
+      "id": 1,
+      "staffOib": "55555555555",
+      "staffRole": "PEDIJATAR",
+      "staffName": "Pero",
+      "staffSurname": "Perić",
+      "childOib": "33333333333",
+      "childName": "Mirta",
+      "childSurname": "Markić",
+      "diagnosisName": "Bolest 2",
+      "startDate": "1.1.2024",
+      "endDate": "7.1.2024"
+    }
+]
+
