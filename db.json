@@ -277,7 +277,11 @@
 
   "getMedicalExamsByChildOib": [
     {
+      "id": 0,
       "staffOib": "44444444444",
+      "staffRole": "LIJEČNIK",
+      "staffName": "Iva",
+      "staffSurname": "Ivić",
       "symptomsDescription": "Opis simptoma...",
       "symptomsDuration": "Trajanje simptoma...",
       "physicalExamDescription": "Fizički pregled...",
@@ -297,7 +301,11 @@
       }
     },
     {
+      "id": 2,
       "staffOib": "44444444444",
+      "staffRole": "LIJEČNIK",
+      "staffName": "Iva",
+      "staffSurname": "Ivić",
       "symptomsDescription": "Opis simptoma2...",
       "symptomsDuration": "Trajanje simptoma2...",
       "physicalExamDescription": "Fizički pregled2...",
@@ -317,7 +325,11 @@
       }
     },
     {
+      "id": 3,
       "staffOib": "44444444444",
+      "staffRole": "LIJEČNIK",
+      "staffName": "Iva",
+      "staffSurname": "Ivić",
       "symptomsDescription": "Opis simptoma3...",
       "symptomsDuration": "Trajanje simptoma3...",
       "physicalExamDescription": "Fizički pregled3...",
