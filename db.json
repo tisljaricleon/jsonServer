@@ -36,6 +36,16 @@
       "email": "pero.peric@gmail.com",
       "address": "Ulica Pere Perić 3",
       "role": "PEDIJATAR"
+    },
+    {
+      "name": "Luka",
+      "surname": "Lukuć",
+      "oib": "66666666666",
+      "sex": "Muško",
+      "dateOfBirth": "4.4.1980.",
+      "email": "luka.lukic@gmail.com",
+      "address": "Ulica Luke Lukić 4",
+      "role": "ADMINISTRATOR"
     }
   ],
   "getChildProfile": [
