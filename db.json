@@ -283,7 +283,9 @@
       "physicalExamDescription": "Fizički pregled...",
       "diagnosisDescription": "Opis dijagnoze...",
       "diagnosisMedication": "Propisani lijekovi...",
-      "diagnosisTreatment": "Propisani daljnji tretman...",
+      "diagnosisTreatment": "Propisani daljnji tretman...",7
+      "date": "2.12.2023.",
+      "time": "06:00",
       "excuseLetter": {
         "isGiven": true,
         "diagnosisName": "Neka bolest",
@@ -323,7 +325,7 @@
       "diagnosisMedication": "Propisani lijekovi3...",
       "diagnosisTreatment": "Propisani daljnji tretman3...",
       "date": "4.1.2024.",
-      "time": "00:00",
+      "time": "10:00",
       "excuseLetter": {
         "isGiven": false,
         "diagnosisName": "",
