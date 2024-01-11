@@ -255,8 +255,8 @@
       "childName": "Fran",
       "childSurname": "Markić",
       "diagnosisName": "Bolest 1",
-      "startDate": "28.12.2023",
-      "endDate": "4.1.2024"
+      "startDate": "28.12.2023.",
+      "endDate": "4.1.2024."
     },
     {
       "id": 1,
@@ -268,8 +268,82 @@
       "childName": "Mirta",
       "childSurname": "Markić",
       "diagnosisName": "Bolest 2",
-      "startDate": "1.1.2024",
-      "endDate": "7.1.2024"
+      "startDate": "1.1.2024.",
+      "endDate": "7.1.2024."
+    }
+  ],
+
+  "getMedicalExamsByChildOib": [
+    {
+      "staffOib": "44444444444",
+      "symptomsDescription": "Opis simptoma...",
+      "symptomsDuration": "Trajanje simptoma...",
+      "physicalExamDescription": "Fizički pregled...",
+      "diagnosisDescription": "Opis dijagnoze...",
+      "diagnosisMedication": "Propisani lijekovi...",
+      "diagnosisTreatment": "Propisani daljnji tretman...",
+      "excuseLetter": {
+        "isGiven": true,
+        "diagnosisName": "Neka bolest",
+        "startDate": "31.1.2023.",
+        "endDate": "4.1.2024."
+      },
+      "sickLeaveLetter": {
+        "isGiven": true
+      }
+    },
+    {
+      "staffOib": "44444444444",
+      "symptomsDescription": "Opis simptoma2...",
+      "symptomsDuration": "Trajanje simptoma2...",
+      "physicalExamDescription": "Fizički pregled2...",
+      "diagnosisDescription": "Opis dijagnoze2...",
+      "diagnosisMedication": "Propisani lijekovi2...",
+      "diagnosisTreatment": "Propisani daljnji tretman2...",
+      "excuseLetter": {
+        "isGiven": true,
+        "diagnosisName": "Neka bolest2",
+        "startDate": "1.1.2024.",
+        "endDate": "10.1.2024."
+      },
+      "sickLeaveLetter": {
+        "isGiven": false
+      }
+    },
+    {
+      "staffOib": "44444444444",
+      "symptomsDescription": "Opis simptoma3...",
+      "symptomsDuration": "Trajanje simptoma3...",
+      "physicalExamDescription": "Fizički pregled3...",
+      "diagnosisDescription": "Opis dijagnoze3...",
+      "diagnosisMedication": "Propisani lijekovi3...",
+      "diagnosisTreatment": "Propisani daljnji tretman3...",
+      "excuseLetter": {
+        "isGiven": false,
+        "diagnosisName": "",
+        "startDate": "",
+        "endDate": ""
+      },
+      "sickLeaveLetter": {
+        "isGiven": false
+      }
+    }
+  ],
+
+  "getMedicalReportsByChildOib": [
+    {
+      "id": 0,
+      "date": "1.1.2024.",
+      "time": "00:00",
+      "medicalReport": "file goes here",
+      "additionalNote": "Dodatna povratna informacija..."
+    },
+    {
+      "id": 1,
+      "date": "5.1.2024.",
+      "time": "12:00",
+      "medicalReport": "file goes here2",
+      "additionalNote": ""
     }
   ]
 }
