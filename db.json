@@ -171,6 +171,8 @@
     "diagnosisDescription": "",
     "diagnosisMedication": "",
     "diagnosisTreatment": "",
+    "date": "",
+    "time": "",
     "excuseLetter": {
       "isGiven": false,
       "diagnosisName": "",
@@ -300,6 +302,8 @@
       "diagnosisDescription": "Opis dijagnoze2...",
       "diagnosisMedication": "Propisani lijekovi2...",
       "diagnosisTreatment": "Propisani daljnji tretman2...",
+      "date": "1.1.2024.",
+      "time": "00:00",
       "excuseLetter": {
         "isGiven": true,
         "diagnosisName": "Neka bolest2",
@@ -318,6 +322,8 @@
       "diagnosisDescription": "Opis dijagnoze3...",
       "diagnosisMedication": "Propisani lijekovi3...",
       "diagnosisTreatment": "Propisani daljnji tretman3...",
+      "date": "4.1.2024.",
+      "time": "00:00",
       "excuseLetter": {
         "isGiven": false,
         "diagnosisName": "",
