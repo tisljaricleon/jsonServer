@@ -375,5 +375,31 @@
       "medicalReport": "file goes here2",
       "additionalNote": ""
     }
-  ]
+  ],
+
+  "getUserProfileByOIB": {
+    "name": "Marko",
+    "surname": "Markić",
+    "oib": "11111111111",
+    "sex": "Muško",
+    "dateOfBirth": "1.1.1980.",
+    "email": "marko.markic@gmail.com",
+    "address": "Ulica Marka Markića 1",
+    "role": "RODITELJ"
+  },
+
+  "deleteUserProfileByOIB": {
+    "oib": "11111111111"
+  },
+
+  "editUserProfileByOIB": {
+    "name": "Marko",
+    "surname": "Markić",
+    "oib": "11111111111",
+    "sex": "Muško",
+    "dateOfBirth": "1.1.1980.",
+    "email": "marko.markic@gmail.com",
+    "address": "Ulica Marka Markića 1",
+    "role": "RODITELJ"
+  }
 }
